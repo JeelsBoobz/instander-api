@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteBase /
+
+RewriteRule ^instander/is_verified.json$ instander/is_verified.php [L,QSA]
+
+ErrorDocument 404 /
